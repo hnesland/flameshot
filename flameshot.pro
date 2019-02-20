@@ -102,6 +102,8 @@ SOURCES += src/main.cpp \
     src/tools/selection/selectiontool.cpp \
     src/tools/sizeindicator/sizeindicatortool.cpp \
     src/tools/toolfactory.cpp \
+    src/tools/jotta/jottalaunchertool.cpp \
+    src/tools/jotta/jottaclishare.cpp \
     src/utils/filenamehandler.cpp \
     src/utils/screengrabber.cpp \
     src/utils/confighandler.cpp \
@@ -175,6 +177,8 @@ HEADERS  += src/widgets/capture/buttonhandler.h \
     src/tools/selection/selectiontool.h \
     src/tools/sizeindicator/sizeindicatortool.h \
     src/tools/toolfactory.h \
+    src/tools/jotta/jottalaunchertool.h \
+    src/tools/jotta/jottaclishare.h \
     src/utils/confighandler.h \
     src/core/controller.h \
     src/utils/systemnotification.h \

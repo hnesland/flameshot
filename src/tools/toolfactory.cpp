@@ -35,6 +35,7 @@
 #include "redo/redotool.h"
 #include "pin/pintool.h"
 #include "text/texttool.h"
+#include "jotta/jottalaunchertool.h"
 
 ToolFactory::ToolFactory(QObject *parent) : QObject(parent) {
 
@@ -102,6 +103,9 @@ CaptureTool* ToolFactory::CreateTool(
         break;
     case CaptureButton::TYPE_TEXT:
         tool = new TextTool(parent);
+        break;
+    case CaptureButton::TYPE_OPEN_JOTTA:
+        tool = new JottaLauncher(parent);
         break;
     default:
         tool = nullptr;
